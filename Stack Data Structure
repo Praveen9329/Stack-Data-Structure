@@ -1,0 +1,60 @@
+package stackbasic;
+
+import java.util.Iterator;
+import java.util.Stack;
+
+public class OpertationOnStack {
+
+	public static void main(String[] args) {
+	//create stack
+		Stack<Integer> s1=new Stack<>();
+		// insert the values into the stack by using push method
+		s1.push(6);
+		s1.push(3);
+		s1.push(5);
+		s1.push(9);
+		s1.push(7);
+		s1.push(null);
+		//s1.push(null);
+	// 	s1.push(null); No of times we can give null values into the stack
+		System.out.println(s1);
+		
+		// remove the element
+		s1.pop();
+		s1.pop();
+	
+		
+		
+		System.out.println(s1);
+		
+		//get the last element in stack
+		
+		
+		System.out.println(s1.peek()+"hi");
+		// check the last is empty or not
+		System.out.println(s1.isEmpty());
+		
+		//iterate the stack
+		
+		Iterator it=s1.iterator();
+		
+		while(it.hasNext())
+		{
+			
+			System.out.print(it.next()+" ");
+		}
+		System.out.println();
+		//search the element index
+		System.out.println(s1.search(9));
+		
+		System.out.println(s1.size());
+		s1.sort(null);
+		System.out.println(s1);
+		
+//		 byte b=50;
+//	 b=(byte) (b*2);
+//	 System.out.println(b);
+		
+	}
+
+}
